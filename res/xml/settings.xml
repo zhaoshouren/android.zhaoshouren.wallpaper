@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings"
+    android:key="zhaoshourenwallpaper_settings">
+    <ListPreference
+        android:key="timeFormat"
+        android:title="@string/timeFormatTitle"
+        android:summary="@string/timeFormatSummary"
+        android:entries="@array/timeFormatKeys"
+        android:entryValues="@array/timeFormatValues" 
+        android:defaultValue="64"/>
+    <ListPreference 
+    	android:title="@string/amPmFormatTitle" 
+    	android:summary="@string/amPmFormatSummary" 
+    	android:key="amPmFormat" 
+    	android:entryValues="@array/amPmFormatValues" 
+    	android:entries="@array/amPmFormatKeys" 
+    	android:defaultValue=" "/>
+</PreferenceScreen>
